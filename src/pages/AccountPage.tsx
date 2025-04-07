@@ -11,9 +11,9 @@ import { User, ShoppingBag, Heart, CreditCard, Settings, LogOut } from "lucide-r
 
 const AccountPage = () => {
   const [user] = useState({
-    name: "John Doe",
-    email: "john.doe@example.com",
-    avatar: "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?w=200&auto=format&fit=crop",
+    name: "Raghuraj Mathur",
+    email: "raghuu715@gmail.com",
+    avatar: "",
   });
   
   const [profileForm, setProfileForm] = useState({
@@ -189,7 +189,7 @@ const AccountPage = () => {
                       <CreditCard className="h-5 w-5 mr-2 text-muted-foreground" />
                       <h3 className="font-semibold">Spent</h3>
                     </div>
-                    <p className="text-3xl font-bold mb-1">$469.96</p>
+                    <p className="text-3xl font-bold mb-1">INR 469.96</p>
                     <p className="text-sm text-muted-foreground">Total spent</p>
                   </div>
                 </div>
@@ -232,7 +232,7 @@ const AccountPage = () => {
                               </span>
                             </td>
                             <td className="py-3 pr-4 font-medium">
-                              ${order.total.toFixed(2)}
+                              INR {order.total.toFixed(2)}
                             </td>
                             <td className="py-3">
                               <Button variant="outline" size="sm">
